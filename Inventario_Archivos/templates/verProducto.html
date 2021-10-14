@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang=es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar datos</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='asets_Productos/verProducto/css/estilos.css')}}">
+</head>
+
+<body>
+    <form class="form">
+
+        <figure class="img__logo">
+            <img src="{{url_for('static', filename='asets_Productos/verProducto/img/smartphone.svg')}} " alt="Foto" class="img__img">
+        </figure>
+
+        <main class="form__main">
+            <div class="form__container">
+
+                    <div class="form__div">
+                        <label class="form__label id">ID: </label>
+                        <label class="form__input">1200</label>
+                    </div>
+
+                    <div class="form__div">
+                        <label class="form__label nombre" >Nombre: </label>
+                        <label class="form__input" >Sony Xperia x</label>
+                    </div>
+
+                    <div class="form__div">
+                        <label class="form__label descripcion">Descripción: </label>
+                        <label class="form__input">Smartphone Gaming de alta gama</label>
+                    </div>
+
+                    <div class="form__div">
+                        <label class="form__label proveedor">Proveedor: </label>
+                        <label class="form__input">SONY GAMING</label>
+                    </div>
+
+                    <div class="form__div">
+                        <label class="form__label bodega">Cantidad en Bodega: </label>
+                        <label class="form__input">250</label>
+                    </div>
+
+                    <div class="form__div">
+                        <label class="form__label minima">Cantidad Mínima: </label>
+                        <label class="form__input">100</label>
+                    </div>
+
+
+                    <div>
+                        <a href="/editarL-P/" class="form__reg ">EDITAR DATOS</a>
+                        <a href="/listaProductos/" class="form__reg cancelar ">ELIMINAR</a>
+                        <a href="/listaProductos/" class="form__reg cancelar ">CANCELAR</a>
+                    </div>
+
+            </div>
+    </main>
+    </form>
+</body>
+
+</html>
